@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/layout_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/rect_empty_border">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="256dp">
+
+            <ImageView
+                android:id="@+id/no_image"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:src="@drawable/noimage"
+                android:layout_margin="8dp"
+                android:scaleType="fitXY"/>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:id="@+id/viewpager_images_produit">
+
+            </android.support.v4.view.ViewPager>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_navigate_next_white_24dp"
+                android:id="@+id/next"
+                app:backgroundTint="@color/colorPrimaryDark"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                app:srcCompat="@drawable/ic_navigate_before_white_24dp"
+                android:id="@+id/previous"
+                app:backgroundTint="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3600 FCFA"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/shop"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/ic_add_shopping"
+                android:padding="4dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120-215  |"
+                    android:textSize="14sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fourniture_school"
+                    android:textSize="14sp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold"
+                    android:lines="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="2dp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

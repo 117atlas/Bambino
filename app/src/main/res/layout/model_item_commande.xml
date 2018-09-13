@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/rect_empty_border">
+
+        <ImageView
+            android:id="@+id/image_cart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/ic_shopping_cart"
+            android:scaleType="centerCrop"
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_weight=".25"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="ID"
+                android:textColor="#212121"
+                android:textSize="12sp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="24"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="92dp"
+            android:layout_weight=".33"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Montant"
+                android:textColor="#212121"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/mont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="350 000 FCFA"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight=".33"
+            android:paddingTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="#212121"
+                android:textSize="12sp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="25-06-2018"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight=".33"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Livré"
+                android:textColor="#212121"
+                android:textSize="12sp"
+                android:layout_marginRight="4dp"/>
+
+            <TextView
+                android:id="@+id/livré"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="NON"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:textSize="12sp"
+                android:layout_marginRight="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
